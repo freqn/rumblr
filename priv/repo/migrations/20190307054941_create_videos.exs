@@ -6,6 +6,7 @@ defmodule Rumbl.Repo.Migrations.CreateVideos do
       add :url, :string
       add :title, :string
       add :description, :text
+      add :view_count, :integer
       add :user_id, references(:users, on_delete: :nothing)
 
       timestamps()

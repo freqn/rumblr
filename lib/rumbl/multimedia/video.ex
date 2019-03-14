@@ -7,6 +7,7 @@ defmodule Rumbl.Multimedia.Video do
     field :description, :string
     field :title, :string
     field :url, :string
+    field :view_count, :integer
     field :user_id, :id
 
     timestamps()
