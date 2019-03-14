@@ -1,14 +1,14 @@
 defmodule Rumbl.Multimedia.Video do
   use Ecto.Schema
   import Ecto.Changeset
-
+  alias Rumbl.Accounts.User
 
   schema "videos" do
     field :description, :string
     field :title, :string
     field :url, :string
     field :view_count, :integer
-    field :user_id, :id
+    belongs_to :user, User
 
     timestamps()
   end
